@@ -1,0 +1,45 @@
+.shopping-title a
+{
+  color: var(--fCol);
+  text-decoration: none;
+}
+table{
+  width: 100%;
+  margin-top: 20px;
+  border-collapse: collapse;
+
+}
+table tr th{
+  text-transform: capitalize;
+  font-weight: bold;
+  padding-bottom: 10px;
+  font-size: 25px;
+}
+table td
+ {
+  border-top: 1px solid var(--bCol);
+  text-align: center;
+  padding: 10px 3px;
+  text-transform: capitalize;
+   font-size :20px;
+}
+
+table td img{
+width: 100px;
+height: 100px;
+border-radius:50% ;
+}
+table td .number
+{
+  width:60px;
+  padding: 4px 2px;
+}
+table td .btn-remove{
+  border: none;
+  outline: none;
+  padding: 7px 20px;
+  cursor: pointer;
+  border-radius: 5px;
+  font-size: 22px;
+  background-color: var(--bCol2);
+}

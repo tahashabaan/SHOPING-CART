@@ -1,0 +1,89 @@
+*{
+  padding: 0px;
+  margin: 0px;
+}
+:root{
+  --bCol:rgba(0, 0, 0, 0.582);
+  --fCol:rgba(255, 255, 255, 0.74);
+  --fCol2:white;
+  --bCol2:rgba(0, 0, 255, 0.507);
+}
+.cur{
+  cursor: pointer;
+}
+ul
+{
+   list-style:none;
+}
+header{
+  background-color:var(--bCol);
+}
+.container-fluid{
+  display: flex;
+  justify-content:space-between ;
+  align-items: center;
+  padding: 10px;
+}
+.shopping-title{
+  color: var(--fCol);
+  letter-spacing: 1px;
+  text-transform: capitalize;
+}
+.pro-page a{
+  color: white;
+}
+.icon{
+  font-size: 33px;
+  position: relative;
+}
+.icon span{
+  position: absolute;
+  top: -7px;
+  left: 60%;
+  transform: translateX(-50%);
+  color: black;
+  font-size: 16px;
+  border-radius: 50%;
+  background-color: brown;
+  padding: 2px;
+}
+.container{
+  width: 80%;
+  margin: auto;
+}
+.row{
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+  grid-gap: 20px 60px;
+  margin: 10px  10px;
+}
+.row .col{
+background-color: brown;
+}
+.row .col img{
+ width: 100%;
+ height: auto;
+}
+.card-content{
+  padding: 10px;
+  font-weight: bold;
+}
+.card-title{
+  text-transform: capitalize;
+  color: var(--fCol);
+  padding-bottom: 20px;
+}
+.card-price{
+  padding-bottom: 10px;
+  font-size: 22px;
+}
+.btn{
+  border: none;
+  outline: none;
+  width: 100px;
+  text-transform: capitalize;
+  padding: 6px 10px;
+  background-color: var(--bCol2);
+  color: var(--fCol2);
+  cursor: pointer;
+}
