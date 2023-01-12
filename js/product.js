@@ -52,9 +52,7 @@ function disProInCart(items)
        </td>
        <td class="title">${element.title}</td>
        <td class="price">${element.price}$</td>
-       <td class="quantity">
-         <input type="number" value="1" onkeyup="totalPrice(${element.id})" name="" class="number">
-       </td>
+
        <td class="total-price">${element.total}$</td>
        <td>
         <button class="btn-remove" onclick="removeItem(${element.id})">remove</button>
@@ -77,7 +75,7 @@ function totalPrice(id)
        dataCart[indItem].total=dataCart[indItem].price*quantity[indItem].    value;
        tempQuanVal=quantity[indItem].value;
        totalPrice[indItem].innerHTML= dataCart[indItem].total +"$";
-     //   localStorage.setItem("keyDataCart",JSON.stringify(dataCart));
+     // localStorage.setItem("keyDataCart",JSON.stringify(dataCart));
        if(quantity[indItem].value=="" || quantity[indItem].value===1)
        {
         dataCart[indItem].total=dataCart[indItem].price;
